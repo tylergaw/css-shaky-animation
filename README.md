@@ -1,7 +1,7 @@
 # CSS Shaky Animation
 
-I'm not sure if it has a name, but I've always loved the shaky
-animation style of a lot of cartoons. The epic
+I've always loved the shaky
+animation style of a lot of cartoons; Squigglevision. The epic
 <a href="http://youtu.be/MuOvqeABHvQ">Rejected</a> is a good example.
 Here I'm using a CSS animation technique <a href="http://lab.tylergaw.com/css-animated-sprites/">i've used before</a>
 to interpolate between frames of text that are slightly different
