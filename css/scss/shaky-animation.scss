@@ -1,0 +1,170 @@
+@import "compass/css3";
+
+$animation-duration: 15s;
+
+@mixin animation ($name, $duration, $iteration-count) {
+    -moz-animation: $name $duration $iteration-count;
+    -webkit-animation: $name $duration $iteration-count;
+    animation: $name $duration $iteration-count;
+}
+
+.stage {
+    padding-top: 55%;
+    position: relative;
+    text-align: center;
+
+    @media screen and (min-width: 480px) {
+        height: 262px;
+        padding-top: 0;
+    }
+
+    div {
+        position: absolute;
+        width: 100%;
+    }
+
+    p {
+        margin: 0 auto;
+        overflow: hidden;
+        text-indent: -100em;
+        width: 95%;
+    }
+}
+
+@mixin shaky-ani {
+    0%, 33% {
+        background-position: 50% 0;
+    }
+
+    33.0001%, 66% {
+        background-position: 50% 50%;
+    }
+
+    66.0001%, 100% {
+        background-position: 50% 100%;
+    }
+}
+
+@-webkit-keyframes shaky {
+    @include shaky-ani;
+}
+
+@-moz-keyframes shaky {
+    @include shaky-ani;
+}
+
+@mixin title-container-ani {
+    0%, 33% {
+        opacity: 1;
+    }
+
+    33.0001%, 100% {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes title-container {
+    @include title-container-ani;
+}
+
+@-moz-keyframes title-container {
+    @include title-container-ani;
+}
+
+.title {
+    top: 8%;
+    @include animation(title-container, $animation-duration, infinite);
+
+    p {
+        @include animation(shaky, 0.25s, infinite);
+        background: transparent image-url("title.svg") no-repeat 50% 0;
+        @include background-size("99%");
+        max-width: 667px;
+        padding-top: 28%;
+    }
+
+    @media screen and (min-width: 745px) {
+        top: 28px;
+
+        p {
+            height: 232px;
+            padding-top: 0;
+        }
+    }
+}
+
+@mixin desc-container-ani {
+    0%, 33%, 66.0001%, 100% {
+        opacity: 0;
+    }
+
+    33.0001%, 66% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes desc-container {
+    @include desc-container-ani;
+}
+
+@-moz-keyframes desc-container {
+    @include desc-container-ani;
+}
+
+.description {
+    @include animation(desc-container, $animation-duration, infinite);
+    top: 0;
+
+    p {
+        @include animation(shaky, 0.25s, infinite);
+        background: transparent image-url("description.svg") no-repeat 50% 0;
+        @include background-size("99%");
+        max-width: 440px;
+        padding-top: 55%;
+    }
+
+    @media screen and (min-width: 480px) {
+        p {
+            height: 280px;
+            padding-top: 0;
+        }
+    }
+}
+
+@mixin credits-container-ani {
+    0%, 66% {
+        opacity: 0;
+    }
+
+    66.0001%, 100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes credits-container {
+    @include credits-container-ani;
+}
+
+@-moz-keyframes credits-container {
+    @include credits-container-ani;
+}
+
+.credits {
+    @include animation(credits-container, $animation-duration, infinite);
+    top: 10%;
+
+    p {
+        @include animation(shaky, 0.25s, infinite);
+        background: transparent image-url("credits.svg") no-repeat 50% 0;
+        @include background-size("100%");
+        max-width: 324px;
+        padding-top: 44%;
+    }
+
+    @media screen and (min-width: 358px) {
+        p {
+            height: 174px;
+            padding-top: 0;
+        }
+    }
+}

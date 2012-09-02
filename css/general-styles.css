@@ -1,0 +1,43 @@
+/* line 2, scss/general-styles.scss */
+body {
+  background: #ededed url('../images/body-bg-white.png') fixed repeat 20% top;
+  color: #ededed;
+  font-family: "chaparral-pro", times, serif;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+}
+/* line 10, scss/general-styles.scss */
+body > div {
+  background: #191919 url('../images/content-bg-charcoal.png') repeat 20% top;
+  -moz-border-image: url('../images/content-border-projects.png') 3 3 3 3 repeat;
+  -o-border-image: url('../images/content-border-projects.png') 3 3 3 3 repeat;
+  -webkit-border-image: url('../images/content-border-projects.png') 3 3 3 3 repeat;
+  border-image: url('../images/content-border-projects.png') 3 3 3 3 repeat;
+  padding: 1.4em 0;
+}
+
+/* line 20, scss/general-styles.scss */
+[role="contentinfo"] {
+  background: transparent url('../images/footer-border-charcoal-white.png') repeat-x 20% top;
+  padding: 0.9em 0 0.5em 0;
+}
+/* line 24, scss/general-styles.scss */
+[role="contentinfo"] p {
+  color: #191919;
+  font-size: 1.1em;
+  line-height: 1.7;
+  margin: 0.4em auto;
+  max-width: 345px;
+  padding: 1em 0 1em 0;
+  width: 90%;
+}
+/* line 34, scss/general-styles.scss */
+[role="contentinfo"] a {
+  color: #ff00ae;
+  display: inline-block;
+}
+/* line 39, scss/general-styles.scss */
+[role="contentinfo"] a:first-of-type {
+  margin-top: 0.6em;
+}

@@ -1,0 +1,42 @@
+// General page styles
+body {
+    background: #ededed image-url("body-bg-white.png") fixed repeat 20% top;
+    color: #ededed;
+    font-family: "chaparral-pro", times, serif;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+
+    & > div {
+        background: #191919 image-url("content-bg-charcoal.png") repeat 20% top;
+        -moz-border-image: image-url("content-border-projects.png") 3 3 3 3 repeat;
+        -o-border-image: image-url("content-border-projects.png") 3 3 3 3 repeat;
+        -webkit-border-image: image-url("content-border-projects.png") 3 3 3 3 repeat;
+        border-image: image-url("content-border-projects.png") 3 3 3 3 repeat;
+        padding: 1.4em 0;
+    }
+}
+
+[role="contentinfo"] {
+    background: transparent image-url("footer-border-charcoal-white.png") repeat-x 20% top;
+    padding: 0.9em 0 0.5em 0;
+
+    p {
+        color: #191919;
+        font-size: 1.1em;
+        line-height: 1.7;
+        margin: 0.4em auto;
+        max-width: 345px;
+        padding: 1em 0 1em 0;
+        width: 90%;
+    }
+
+    a {
+        color: #ff00ae;
+        display: inline-block;
+    }
+
+    a:first-of-type {
+        margin-top: 0.6em;
+    }
+}
