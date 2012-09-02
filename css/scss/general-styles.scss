@@ -36,7 +36,7 @@ body {
         display: inline-block;
     }
 
-    a:first-of-type {
+    br:first-of-type + a{
         margin-top: 0.6em;
     }
 }

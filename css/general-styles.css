@@ -38,6 +38,6 @@ body > div {
   display: inline-block;
 }
 /* line 39, scss/general-styles.scss */
-[role="contentinfo"] a:first-of-type {
+[role="contentinfo"] br:first-of-type + a {
   margin-top: 0.6em;
 }
