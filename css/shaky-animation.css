@@ -41,7 +41,7 @@
   }
 }
 
-@-moz-keyframes shaky {
+@keyframes shaky {
   /* line 35, scss/shaky-animation.scss */
   0%, 33% {
     background-position: 50% 0;
@@ -70,7 +70,7 @@
   }
 }
 
-@-moz-keyframes title-container {
+@keyframes title-container {
   /* line 57, scss/shaky-animation.scss */
   0%, 33% {
     opacity: 1;
@@ -85,7 +85,6 @@
 /* line 74, scss/shaky-animation.scss */
 .title {
   top: 8%;
-  -moz-animation: title-container 15s infinite;
   -webkit-animation: title-container 15s infinite;
   animation: title-container 15s infinite;
 }
@@ -126,7 +125,7 @@
   }
 }
 
-@-moz-keyframes desc-container {
+@keyframes desc-container {
   /* line 97, scss/shaky-animation.scss */
   0%, 33%, 66.0001%, 100% {
     opacity: 0;
@@ -140,14 +139,12 @@
 
 /* line 114, scss/shaky-animation.scss */
 .description {
-  -moz-animation: desc-container 15s infinite;
   -webkit-animation: desc-container 15s infinite;
   animation: desc-container 15s infinite;
   top: 0;
 }
 /* line 118, scss/shaky-animation.scss */
 .description p {
-  -moz-animation: shaky 0.25s infinite;
   -webkit-animation: shaky 0.25s infinite;
   animation: shaky 0.25s infinite;
   background: transparent url('../images/description.svg') no-repeat 50% 0;
@@ -178,7 +175,7 @@
   }
 }
 
-@-moz-keyframes credits-container {
+@keyframes credits-container {
   /* line 135, scss/shaky-animation.scss */
   0%, 66% {
     opacity: 0;
@@ -192,14 +189,12 @@
 
 /* line 152, scss/shaky-animation.scss */
 .credits {
-  -moz-animation: credits-container 15s infinite;
   -webkit-animation: credits-container 15s infinite;
   animation: credits-container 15s infinite;
   top: 10%;
 }
 /* line 156, scss/shaky-animation.scss */
 .credits p {
-  -moz-animation: shaky 0.25s infinite;
   -webkit-animation: shaky 0.25s infinite;
   animation: shaky 0.25s infinite;
   background: transparent url('../images/credits.svg') no-repeat 50% 0;
