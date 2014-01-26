@@ -9,9 +9,6 @@ body {
 
     & > div {
         background: #191919 image-url("content-bg-charcoal.png") repeat 20% top;
-        -moz-border-image: image-url("content-border-projects.png") 3 3 3 3 repeat;
-        -o-border-image: image-url("content-border-projects.png") 3 3 3 3 repeat;
-        -webkit-border-image: image-url("content-border-projects.png") 3 3 3 3 repeat;
         border-image: image-url("content-border-projects.png") 3 3 3 3 repeat;
         padding: 1.4em 0;
     }

@@ -1,22 +1,22 @@
-/* line 11, scss/shaky-animation.scss */
+/* line 8, scss/shaky-animation.scss */
 .stage {
   padding-top: 55%;
   position: relative;
   text-align: center;
 }
 @media screen and (min-width: 480px) {
-  /* line 11, scss/shaky-animation.scss */
+  /* line 8, scss/shaky-animation.scss */
   .stage {
     height: 262px;
     padding-top: 0;
   }
 }
-/* line 21, scss/shaky-animation.scss */
+/* line 18, scss/shaky-animation.scss */
 .stage div {
   position: absolute;
   width: 100%;
 }
-/* line 26, scss/shaky-animation.scss */
+/* line 23, scss/shaky-animation.scss */
 .stage p {
   margin: 0 auto;
   overflow: hidden;
@@ -25,88 +25,84 @@
 }
 
 @-webkit-keyframes shaky {
-  /* line 35, scss/shaky-animation.scss */
+  /* line 32, scss/shaky-animation.scss */
   0%, 33% {
     background-position: 50% 0;
   }
 
-  /* line 39, scss/shaky-animation.scss */
+  /* line 36, scss/shaky-animation.scss */
   33.0001%, 66% {
     background-position: 50% 50%;
   }
 
-  /* line 43, scss/shaky-animation.scss */
+  /* line 40, scss/shaky-animation.scss */
   66.0001%, 100% {
     background-position: 50% 100%;
   }
 }
 
 @keyframes shaky {
-  /* line 35, scss/shaky-animation.scss */
+  /* line 32, scss/shaky-animation.scss */
   0%, 33% {
     background-position: 50% 0;
   }
 
-  /* line 39, scss/shaky-animation.scss */
+  /* line 36, scss/shaky-animation.scss */
   33.0001%, 66% {
     background-position: 50% 50%;
   }
 
-  /* line 43, scss/shaky-animation.scss */
+  /* line 40, scss/shaky-animation.scss */
   66.0001%, 100% {
     background-position: 50% 100%;
   }
 }
 
 @-webkit-keyframes title-container {
-  /* line 57, scss/shaky-animation.scss */
+  /* line 54, scss/shaky-animation.scss */
   0%, 33% {
     opacity: 1;
   }
 
-  /* line 61, scss/shaky-animation.scss */
+  /* line 58, scss/shaky-animation.scss */
   33.0001%, 100% {
     opacity: 0;
   }
 }
 
 @keyframes title-container {
-  /* line 57, scss/shaky-animation.scss */
+  /* line 54, scss/shaky-animation.scss */
   0%, 33% {
     opacity: 1;
   }
 
-  /* line 61, scss/shaky-animation.scss */
+  /* line 58, scss/shaky-animation.scss */
   33.0001%, 100% {
     opacity: 0;
   }
 }
 
-/* line 74, scss/shaky-animation.scss */
+/* line 71, scss/shaky-animation.scss */
 .title {
   top: 8%;
   -webkit-animation: title-container 15s infinite;
   animation: title-container 15s infinite;
 }
-/* line 78, scss/shaky-animation.scss */
+/* line 75, scss/shaky-animation.scss */
 .title p {
-  -moz-animation: shaky 0.25s infinite;
   -webkit-animation: shaky 0.25s infinite;
   animation: shaky 0.25s infinite;
   background: transparent url('../images/title.svg') no-repeat 50% 0;
-  -webkit-background-size: 99%;
-  -moz-background-size: 99%;
-  -o-background-size: 99%;
   background-size: 99%;
   max-width: 667px;
   padding-top: 28%;
 }
 @media screen and (min-width: 745px) {
-  /* line 74, scss/shaky-animation.scss */
+  /* line 71, scss/shaky-animation.scss */
   .title {
     top: 28px;
   }
-  /* line 89, scss/shaky-animation.scss */
+  /* line 86, scss/shaky-animation.scss */
   .title p {
     height: 232px;
     padding-top: 0;
@@ -114,49 +110,46 @@
 }
 
 @-webkit-keyframes desc-container {
-  /* line 97, scss/shaky-animation.scss */
+  /* line 94, scss/shaky-animation.scss */
   0%, 33%, 66.0001%, 100% {
     opacity: 0;
   }
 
-  /* line 101, scss/shaky-animation.scss */
+  /* line 98, scss/shaky-animation.scss */
   33.0001%, 66% {
     opacity: 1;
   }
 }
 
 @keyframes desc-container {
-  /* line 97, scss/shaky-animation.scss */
+  /* line 94, scss/shaky-animation.scss */
   0%, 33%, 66.0001%, 100% {
     opacity: 0;
   }
 
-  /* line 101, scss/shaky-animation.scss */
+  /* line 98, scss/shaky-animation.scss */
   33.0001%, 66% {
     opacity: 1;
   }
 }
 
-/* line 114, scss/shaky-animation.scss */
+/* line 111, scss/shaky-animation.scss */
 .description {
   -webkit-animation: desc-container 15s infinite;
   animation: desc-container 15s infinite;
   top: 0;
 }
-/* line 118, scss/shaky-animation.scss */
+/* line 115, scss/shaky-animation.scss */
 .description p {
   -webkit-animation: shaky 0.25s infinite;
   animation: shaky 0.25s infinite;
   background: transparent url('../images/description.svg') no-repeat 50% 0;
-  -webkit-background-size: 99%;
-  -moz-background-size: 99%;
-  -o-background-size: 99%;
   background-size: 99%;
   max-width: 440px;
   padding-top: 55%;
 }
 @media screen and (min-width: 480px) {
-  /* line 127, scss/shaky-animation.scss */
+  /* line 124, scss/shaky-animation.scss */
   .description p {
     height: 280px;
     padding-top: 0;
@@ -164,49 +157,46 @@
 }
 
 @-webkit-keyframes credits-container {
-  /* line 135, scss/shaky-animation.scss */
+  /* line 132, scss/shaky-animation.scss */
   0%, 66% {
     opacity: 0;
   }
 
-  /* line 139, scss/shaky-animation.scss */
+  /* line 136, scss/shaky-animation.scss */
   66.0001%, 100% {
     opacity: 1;
   }
 }
 
 @keyframes credits-container {
-  /* line 135, scss/shaky-animation.scss */
+  /* line 132, scss/shaky-animation.scss */
   0%, 66% {
     opacity: 0;
   }
 
-  /* line 139, scss/shaky-animation.scss */
+  /* line 136, scss/shaky-animation.scss */
   66.0001%, 100% {
     opacity: 1;
   }
 }
 
-/* line 152, scss/shaky-animation.scss */
+/* line 149, scss/shaky-animation.scss */
 .credits {
   -webkit-animation: credits-container 15s infinite;
   animation: credits-container 15s infinite;
   top: 10%;
 }
-/* line 156, scss/shaky-animation.scss */
+/* line 153, scss/shaky-animation.scss */
 .credits p {
   -webkit-animation: shaky 0.25s infinite;
   animation: shaky 0.25s infinite;
   background: transparent url('../images/credits.svg') no-repeat 50% 0;
-  -webkit-background-size: 100%;
-  -moz-background-size: 100%;
-  -o-background-size: 100%;
   background-size: 100%;
   max-width: 324px;
   padding-top: 44%;
 }
 @media screen and (min-width: 358px) {
-  /* line 165, scss/shaky-animation.scss */
+  /* line 162, scss/shaky-animation.scss */
   .credits p {
     height: 174px;
     padding-top: 0;
